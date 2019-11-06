@@ -1,7 +1,7 @@
 # EPA: Ensemble Proteochemometrics-Adversarial Autoencoder
 ## paper "Semi-supervised Proteochemometrics-Adversarial Autoencoder Model (PCM-AAE): Case Study of Large-scale Kinase-inhibitor Mapping"
 
-PCM-AAE is for predicting kinase-inhibitor binding affinity by DNN model with training data augementation. The input can be (1) the pair of a SMILES string of molecule and an amino acid sequence of protein kinase;(2) only SMILES strings of one molecule or a list of multiple molecules to predict the kinase profile; (3) only Uniprot_id or amino acid sequence of one or more protein kinases and compound library to predict the potential inhibitors of the protein from specific compound library. The output is csv files recording possible log binding affinity. In addition, the AAE model architecture for data augmentation, based on TensorFlow, is also shown in "models" directory，which augements data with different types.The overview of PCM-AAE strategy is as follows:
+EPA is for predicting kinase-inhibitor binding affinity by DNN model with training data augementation. The input can be (1) the pair of a SMILES string of molecule and an amino acid sequence of protein kinase;(2) only SMILES strings of one molecule or a list of multiple molecules to predict the kinase profile; (3) only Uniprot_id or amino acid sequence of one or more protein kinases and compound library to predict the potential inhibitors of the protein from specific compound library. The output is csv files recording possible log binding affinity. In addition, the PCM-AAE model architecture for data augmentation, based on TensorFlow, is also shown in "models" directory，which augements data with different types.The overview of EPA implementation is as follows:
 
 <div align="center">
 <p><img src="https://github.com/xybai-dev/EPA/raw/master/png/EPA.png" width="600" /></p>
@@ -27,12 +27,12 @@ If data augmentation need to be applied into the other data types, you‘ll need
 ## Installation
 You can obtain PCM-AAE using git
 ```
-git clone https://github.com/xybai-dev/PCM-AAE.git
+git clone https://github.com/xybai-dev/EPA.git
 ```
 or you can just go to "https://github.com/xybai-dev/EPA" and download the repository
 ```
 
-cd PCM-AAE
+cd EPA
 ```
 ## Usage
 
