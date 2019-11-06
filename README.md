@@ -1,4 +1,4 @@
-# EPA: Ensemble Proteochemometrics-Adversarial Autoencoder
+# About PCM-AAE
 ## paper "Semi-supervised Proteochemometrics-Adversarial Autoencoder Model (PCM-AAE): Case Study of Large-scale Kinase-inhibitor Mapping"
 
 PCM-AAE is for predicting kinase-inhibitor binding affinity by DNN model with training data augementation. The input can be (1) the pair of a SMILES string of molecule and an amino acid sequence of protein kinase;(2) only SMILES strings of one molecule or a list of multiple molecules to predict the kinase profile; (3) only Uniprot_id or amino acid sequence of one or more protein kinases and compound library to predict the potential inhibitors of the protein from specific compound library. The output is csv files recording possible log binding affinity. In addition, the AAE model architecture for data augmentation, based on TensorFlow, is also shown in "models" directory，which augements data with different types.The overview of PCM-AAE strategy is as follows:
